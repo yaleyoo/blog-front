@@ -1,5 +1,5 @@
 import React, { Component }from 'react';
-import wrapper from '../img/wrapper.jpg';
+import wrapper from '../img/daofeng.jpg';
 import './top-bar.css';
 import { FaHome, FaAlignJustify, FaArchive, FaLightbulb, FaCommentAlt, FaUserAlt, FaGithub, FaFileAlt, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -86,23 +86,25 @@ export class NaviBar extends React.Component {
       export class HelloMessage extends React.Component {
         render() {
           return (
-              <div id="header-wrapper" style={{backgroundImage: 'url(' + wrapper + ')'}}>
-                <div style={{textAlign: 'center',
+              <div id="header-wrapper" style={{backgroundImage: 'url(' + wrapper + ')', position:'relative'}}>
+                <div style={{textAlign: 'center',position: 'relative',
                                             textShadow: '1px 3px #736666',
                                             paddingTop: '240px',
                                             color: '#f27d6b',
                                             fontFamily: 'Courier',
                                             fontWeight: 'bolder',
-                                            fontSize: '70px'}}>Bonjour! Yaleyoo
+                                            fontSize: '70px',
+                                            zIndex:2}}>Bonjour! Yaleyoo
                 </div>
 
-                <div style={{textAlign: 'center',
+                <div style={{textAlign: 'center',position: 'relative',
                                             textShadow: '1px 1px #475290',
                                             paddingTop: '40px',
                                             color: '#5cc4ec',
                                             fontFamily: 'Courier',
                                             fontWeight: 'bolder',
-                                            fontSize: '30px'}}>Stay Foolish, Stay Hungry
+                                            fontSize: '30px',
+                                            zIndex: 2}}>Stay Foolish, Stay Hungry
                 </div>
               </div>
           );

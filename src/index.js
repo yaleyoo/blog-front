@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.js';
+import Footer from './common/footer.js';
 import './css/index.css';
 import * as serviceWorker from './serviceWorker';
-import { FaGithub, FaFileAlt, FaLinkedin, FaWeixin, FaQq } from "react-icons/fa";
+import { FaRegCalendarAlt, FaGithub, FaFileAlt, FaLinkedin, FaWeixin, FaQq } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 import quincy from "./img/quincy.jpg";
@@ -21,7 +22,25 @@ class Avatar extends React.Component{
   render(){
     return(  
       <div id="body-wrapper">
-          <div id="blog_bar" className="col-9"></div>
+          <div id="blog_bar" className="col-9">
+            <div className="card blog mb-3" style={{maxWidth:'540px'}}>
+              <div className="row no-gutters">
+                <div className="col-md-4">
+                  <img src="https://s2.ax1x.com/2019/03/11/ACC1G4.png" className="card-img" />
+                </div>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text blog-content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
           <div id="avatar" className="card">
                 <img className="card-img-top" src={quincy} alt="昆西昆OvO？" />
                 <div className="card-body">
@@ -59,6 +78,7 @@ function Body(props) {
         <HelloMessage />
         <Canvas />
         <Avatar />
+        <Footer />
       </div>);
 }
 
