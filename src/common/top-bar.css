@@ -1,0 +1,40 @@
+.bg-dark{
+        background-color: rgba(67, 67, 70, 0.9) !important;
+    }
+    .nav-item{
+        padding-right: 20px;
+    }
+    #type-menu{
+        background-color: rgba(67, 67, 70, 0.9);
+        border: none !important;
+    }
+    #type-menu a{
+        color: #FFFFFF;
+    }
+    .dropdown-item:hover{
+        background-color: #636b73;
+    }
+    @media all and (min-width: 950px) {
+        #header-wrapper {
+            width: 100%;
+            height: 90%;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+    @media all and (max-width: 949px) {
+        #header-wrapper {
+            height: 300px;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+        }
+        #header-wrapper div:first-child{
+            padding-top: 12% !important;
+            font-size: 50px !important;
+        }
+        #header-wrapper div:last-child{
+            padding-top: 10px !important;
+            font-size: 25px !important;
+        }
+    }
